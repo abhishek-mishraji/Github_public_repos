@@ -52,7 +52,7 @@ function displayRepos(data) {
 
     document.getElementById('profile').innerHTML = `
         <img src="${user.avatar_url}" alt="${user.name}'s avatar" width="50" height="50">
-        <h2>Hi, ${user.name}</h2>
+        <h2>Hi, ${user.name ? user.name : user.login}</h2>
         <p>Well Done! Genius: ${user.public_repos}</p>
     `;
 
